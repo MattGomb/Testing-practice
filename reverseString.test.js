@@ -1,7 +1,7 @@
 const reverseString = require('./reverseString.js');
 
 describe('Test reverse function', () => {
-  test('"123456" should return "654321"', () => {
-    expect(reverseString('123456')).toBe('654321');
+  test('"should return the opposite order"', () => {
+    expect(reverseString('1234')).toBe('4321');
   });
 });
