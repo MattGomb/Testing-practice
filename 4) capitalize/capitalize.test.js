@@ -1,5 +1,10 @@
 const capitalize = require('./capitalize.js');
 
-it('should return the first character capitalized', () => {
-  expect(capitalize('the first character')).toBe('The first character')
-})
+describe('should return the first character capitalized', () => {
+  test('one word', () => {
+    expect(capitalize('incredible')).toBe('Incredible');
+  })
+  test('more than one word', () => {
+    expect(capitalize('bohemian rhapsody')).toBe('Bohemian rhapsody');
+  })
+});

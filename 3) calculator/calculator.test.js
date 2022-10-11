@@ -1,6 +1,6 @@
 const { calculator } = require('./calculator.js');
 
-describe('add feature', () => {
+describe('addition', () => {
   test('two positives', () => {
     expect(calculator.add(1, 2)).toBe(3);
   })
@@ -15,7 +15,7 @@ describe('add feature', () => {
   })
 })
 
-describe('subtract feature', () => {
+describe('subtraction', () => {
   test('two positives', () => {
     expect(calculator.subtract(6, 5)).toBe(1);
   })
@@ -30,7 +30,7 @@ describe('subtract feature', () => {
   })
 })
 
-describe('division feature', () => {
+describe('division', () => {
   test('throw zero error', () => {
     expect(calculator.divide(8, 0)).toBe('Error: Cannot divide by zero');
   })
@@ -48,7 +48,7 @@ describe('division feature', () => {
   })
 })
 
-describe('multiplication feature', () => {
+describe('multiplication', () => {
   test('two positives', () => {
     expect(calculator.multiply(6, 6)).toBe(36);
   })
